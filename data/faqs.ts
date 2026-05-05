@@ -1,104 +1,159 @@
 export interface FAQ {
+  id: string;
   question: string;
   answer: string;
   category: string;
 }
 
 export const faqs: FAQ[] = [
-  // General
   {
-    category: 'General',
-    question: 'Can I get insurance for a tiny home in New Zealand?',
-    answer: 'Yes — tiny home insurance is available in New Zealand, but it requires a specialist approach. Standard house insurance policies from major insurers often exclude or restrict cover for tiny homes, particularly tiny houses on wheels (THOWs), container homes, and off-grid dwellings. Our advisers work with insurers who understand the tiny home market and can arrange appropriate cover for your specific build, location, and living situation.',
+    id: 'what-is-contents-insurance',
+    question: 'What is home contents insurance?',
+    answer: `Home contents insurance covers your personal belongings — everything inside your home that isn't physically part of the building itself. Think of it this way: if you turned your house upside down and shook it, everything that fell out would be your contents. This includes furniture, electronics, appliances, clothing, jewellery, sporting equipment, and personal possessions. Contents insurance protects these items against loss, theft, or damage from events like fire, flood, storm, and burglary.`,
+    category: 'Basics',
   },
   {
-    category: 'General',
-    question: 'What is classed as a tiny home for insurance purposes?',
-    answer: 'For insurance purposes, a tiny home is typically defined as a compact dwelling under 50 square metres. This includes tiny houses on wheels (THOWs) built on trailer platforms, container homes (converted shipping containers), compact fixed-foundation homes, park homes, relocatable homes, and off-grid cabins used as primary residences. Each type has different risk profiles and may require different insurance structures.',
+    id: 'do-renters-need-contents-insurance',
+    question: `I'm renting — do I really need contents insurance?`,
+    answer: `Yes. Your landlord's house insurance covers the building — not your belongings. If there's a burglary, fire, or flood, your landlord's insurer will pay to fix the building, but you'll be left to replace your furniture, electronics, clothing, and everything else out of your own pocket. The average Kiwi renter owns more than $30,000 worth of contents. Contents insurance costs around $400–$800 per year and is one of the most cost-effective forms of insurance available.`,
+    category: 'Renters',
   },
   {
-    category: 'General',
-    question: 'Why can\'t I just use standard house insurance for my tiny home?',
-    answer: 'Standard home insurance policies are designed for conventional houses — they\'re written with assumptions about construction type, foundation, location, and use that don\'t fit tiny homes. Common issues include: exclusions for homes on wheels or without a fixed foundation; restrictions on non-standard materials (recycled timber, corten steel, polycarbonate); cover gaps for off-grid systems like solar and rainwater; and no provision for transit cover during relocation. Specialist tiny home insurance fills these gaps.',
+    id: 'contents-vs-house-insurance',
+    question: `What's the difference between house insurance and contents insurance?`,
+    answer: `House (building) insurance covers the physical structure of your home — walls, roof, floors, fixed fittings, plumbing, and electrical wiring. Contents insurance covers everything inside that isn't fixed to the building. You need both if you own your home. If you rent, you only need contents insurance, as your landlord handles the building cover. Some insurers offer a combined house and contents package, which can be more convenient and sometimes cheaper.`,
+    category: 'Basics',
   },
   {
-    category: 'General',
-    question: 'Is tiny home insurance expensive?',
-    answer: 'The cost of tiny home insurance depends on several factors: the replacement value of your home, your location and weather exposure, whether your home is on wheels or fixed, your security arrangements, and the covers you select. Because tiny homes are typically lower in replacement value than conventional houses, premiums can be surprisingly affordable — though specialist cover will cost more than a generic policy that may not actually respond at claim time. Our advisers compare options to find the right balance of cover and cost.',
-  },
-  // Building & Structure
-  {
-    category: 'Building & Structure',
-    question: 'Does my tiny home need to be on a permanent foundation to be insured?',
-    answer: 'No. Specialist tiny home insurers can cover both fixed-foundation tiny homes and tiny houses on wheels (THOWs). The key is ensuring your adviser knows the exact nature of your dwelling so the policy is written appropriately. A THOW typically needs both building cover (when stationary) and transit cover (when being moved), while a fixed tiny home may be insurable under a modified residential or commercial property policy.',
+    id: 'how-much-sum-insured',
+    question: 'How much should I insure my contents for?',
+    answer: `The sum insured should equal the full replacement cost of all your belongings — not what you paid for them, but what it would cost to replace everything new today. The average Kiwi household has $70,000 or more in contents. Go room by room: bedroom furniture and clothing, living room electronics and furniture, kitchen appliances and cookware, plus any high-value items like jewellery or cameras. Many people significantly underestimate this figure. When in doubt, err on the higher side — the premium difference is usually modest compared to the risk of underinsurance.`,
+    category: 'Cover & Limits',
   },
   {
-    category: 'Building & Structure',
-    question: 'What if my tiny home is built from non-standard materials?',
-    answer: 'Many tiny homes use materials that aren\'t typical in conventional construction — recycled timber, polystyrene panels, corten steel, corrugated iron, polycarbonate, or composite materials. Some insurers restrict or exclude non-standard construction; others specialise in it. Our advisers will match you with an insurer who can cover your specific build at full replacement cost, and ensure the sum insured reflects the actual cost to rebuild — which for a custom tiny home can be surprisingly high per square metre.',
+    id: 'how-much-does-contents-insurance-cost',
+    question: 'How much does contents insurance cost in NZ?',
+    answer: `Based on Q1 2026 market data, the average cost of contents insurance in New Zealand is around $804 per year ($67 per month). This varies significantly by region: Auckland averages $676/year, Christchurch $790/year, and Wellington $995/year — the highest in NZ due to earthquake and weather risk. Your actual premium depends on your sum insured, excess level, location, and insurer. Premiums for the same level of cover can vary by $400–$700 between insurers, so comparing is worthwhile.`,
+    category: 'Cost',
   },
   {
-    category: 'Building & Structure',
-    question: 'Does building insurance cover earthquake damage in New Zealand?',
-    answer: 'New Zealand sits on the Pacific Ring of Fire, making earthquake cover a priority. EQC (Earthquake Commission) provides a base level of cover for residential land and buildings under the Natural Hazards Insurance Act 2023, but EQC cover has caps and doesn\'t apply to all tiny home types — particularly THOWs and some non-standard dwellings. Your specialist insurer will clarify how EQC interacts with your policy and ensure you have adequate top-up cover for the full replacement cost of your home.',
+    id: 'what-excess-should-i-choose',
+    question: 'What excess should I choose for contents insurance?',
+    answer: `The excess is the amount you pay towards a claim before your insurer covers the rest. Standard excesses across NZ policies range from $250 to $750. Increasing your excess is the fastest way to lower your premium — moving from $250 to $1,000 can reduce your premium by 30% or more. However, you need to be confident you can afford the excess at claim time. For most people, a $500–$750 excess strikes the right balance between affordable premiums and manageable out-of-pocket costs.`,
+    category: 'Cost',
   },
   {
-    category: 'Building & Structure',
-    question: 'What sum insured should I use for my tiny home?',
-    answer: 'The sum insured should reflect the full cost to rebuild your tiny home from scratch — not its market value or purchase price. For a custom-built tiny home, this includes materials, labour, design, consenting fees, and site preparation. Many tiny homeowners underinsure because tiny homes are often cheaper to purchase than to rebuild. Your adviser can help you calculate an appropriate sum insured, and some insurers offer agreed-value policies that guarantee the payout in a total loss.',
-  },
-  // THOW Specific
-  {
-    category: 'Tiny Houses on Wheels',
-    question: 'Do I need special insurance to tow my tiny house on wheels?',
-    answer: 'Yes. When your THOW is being towed, your standard car or trailer insurance likely won\'t provide adequate cover for the home itself, and your static building insurance may have a transit exclusion. You\'ll typically need: transit cover for the THOW structure while being moved; appropriate towing vehicle insurance; and potentially a special-type vehicle permit depending on the dimensions of your THOW. Our advisers can help arrange the right combination of covers for towing.',
+    id: 'replacement-vs-indemnity',
+    question: `What's the difference between replacement value and indemnity value?`,
+    answer: `Replacement value (new-for-old) cover pays the cost of replacing your item with a brand-new equivalent today — regardless of age. Indemnity value pays what the item was worth second-hand, accounting for age and wear. For example, a 3-year-old laptop stolen from your home might have an indemnity value of $300 but cost $1,800 to replace new. Replacement value is strongly recommended. Most comprehensive NZ contents policies now offer replacement value as standard — but always check the policy wording before buying.`,
+    category: 'Cover & Limits',
   },
   {
-    category: 'Tiny Houses on Wheels',
-    question: 'Does my THOW need a WOF or CoF?',
-    answer: 'In New Zealand, tiny houses on wheels are typically classified as heavy trailers if they exceed 3,500kg GVM. Heavy trailers require a Certificate of Fitness (CoF) rather than a Warrant of Fitness (WoF). Your THOW must comply with the dimensions permitted under the Vehicle Dimensions and Mass rule (a maximum of 2.55m wide, 4.25m high, and 12.5m long for a trailer). Compliance with these requirements is often a condition of obtaining transit insurance.',
+    id: 'high-value-items-limits',
+    question: 'Are my jewellery and high-value items fully covered?',
+    answer: `Most standard contents policies have sub-limits on individual items — often $1,000 to $2,500 per item for jewellery, and similar limits for cameras, watches, and art. Tower's Plus tier limits jewellery to $2,500 per item; their Premium tier increases this to $10,000. If you own items worth more than these sub-limits, you need to specify them individually on your policy at agreed value. Without a specified item endorsement, you'll only receive the sub-limit amount at claim time — regardless of the item's true value.`,
+    category: 'Cover & Limits',
   },
   {
-    category: 'Tiny Houses on Wheels',
-    question: 'Can I insure my THOW at a campground or holiday park?',
-    answer: 'Yes. Many THOW owners live or holiday at campgrounds and holiday parks. When your THOW is parked on a leased or licensed site, it should be covered by your building insurance as long as your policy doesn\'t have a specific location restriction. Public liability is particularly important at campgrounds, where your home is in close proximity to other people\'s property. Let your adviser know if you move sites regularly, as some policies require notification of relocation.',
-  },
-  // Off-Grid
-  {
-    category: 'Off-Grid Living',
-    question: 'Are solar panels and battery storage covered under tiny home insurance?',
-    answer: 'It depends on the policy. Some building insurance policies automatically include permanently-fixed solar panels, but battery storage systems (such as Tesla Powerwall or similar) may be treated separately. Off-grid systems including rainwater tanks, composting toilets, and greywater treatment systems are often excluded from standard policies. A specialist tiny home adviser will ensure your off-grid infrastructure is specifically covered — either under your building policy or through a dedicated off-grid systems endorsement.',
+    id: 'portable-valuables',
+    question: 'Are my belongings covered outside the home?',
+    answer: `It depends on your policy. Most comprehensive contents policies include some away-from-home cover for your laptop, phone, camera, or handbag if they're lost, stolen, or damaged outside the home within New Zealand. However, limits on away-from-home cover are often lower than at-home cover, and coverage may not extend overseas automatically. Tower's Premium policy covers accidental loss or damage anywhere in NZ up to the full sum insured. Portable valuables extensions provide full named-item cover anywhere in NZ and sometimes internationally for up to 90 days.`,
+    category: 'Cover & Limits',
   },
   {
-    category: 'Off-Grid Living',
-    question: 'I live off-grid in a remote location — does that affect my insurance?',
-    answer: 'Location can affect both your premium and the availability of cover. Remote locations may attract higher premiums due to longer response times for emergency services (fire, for example), greater exposure to weather events, and higher rebuild logistics costs. Some insurers restrict cover in very remote areas. However, specialist tiny home insurers are experienced with off-grid rural living and can typically arrange appropriate cover — it\'s a matter of disclosing your location and situation accurately to your adviser.',
+    id: 'does-contents-cover-my-flatmates',
+    question: 'Does my contents policy cover my flatmates?',
+    answer: `No. Contents insurance covers you and your immediate family members living at the same address. It does not cover flatmates, boarders, or guests. Every person in a flatting situation needs their own individual contents policy. This is one of the most common misunderstandings among younger renters — if you're flatting, each flatmate should take out their own policy to ensure their belongings are protected.`,
+    category: 'Renters',
   },
-  // Claims
   {
+    id: 'earthquake-contents-cover',
+    question: 'Are my contents covered for earthquake damage?',
+    answer: `Yes — but not through NHC (formerly EQC). NHC cover only applies to residential buildings and land, not to contents. Your household contents are covered for earthquake damage through your private contents insurance policy. Most comprehensive policies include natural disaster damage as standard. However, the excess for natural hazard claims can be higher than your standard excess — always check the policy wording. In Wellington or Christchurch, make sure your sum insured reflects current replacement costs, as premiums are higher in these regions for good reason.`,
+    category: 'Cover & Limits',
+  },
+  {
+    id: 'landlord-contents-insurance',
+    question: `I rent out a furnished property — is my contents covered?`,
+    answer: `Standard landlord building insurance typically includes a small amount of landlord contents cover (usually $5,000–$20,000), but this may not be enough if you provide significant furniture and appliances. Initio's landlord policy includes $20,000 of landlord contents by default. For fully furnished rental properties, dedicated landlord contents insurance covers your furniture, whiteware, and fittings against tenant damage, accidental damage, and theft — and can include loss of rental income protection and liability cover. This is a specialist area where a NZ-licensed adviser adds real value.`,
+    category: 'Landlords',
+  },
+  {
+    id: 'accidental-damage',
+    question: 'Does contents insurance cover accidental damage?',
+    answer: `Basic contents policies typically only cover defined events — fire, theft, flood, storm. Accidental damage is an optional extension (or included in comprehensive policies) that protects against sudden, unintended damage — spilling wine on a laptop, dropping a TV, or a child breaking a mirror. Tower includes accidental damage in their Plus and Premium tiers. It typically adds 10–20% to your premium but provides significant peace of mind, especially for households with young children or pets.`,
+    category: 'Cover & Limits',
+  },
+  {
+    id: 'can-i-insure-contents-without-house-insurance',
+    question: 'Can I get contents insurance without house insurance?',
+    answer: `Yes — contents insurance is available as a standalone product from most major NZ insurers: AMI, State, AA Insurance, Tower, Trade Me Insurance, and AMP all offer standalone contents policies. One notable exception is Initio, which only offers contents insurance as an add-on to a house or landlord policy — making it unsuitable as a standalone option for renters. If you rent, you simply need a standalone contents policy, and you have plenty of options to choose from.`,
+    category: 'Basics',
+  },
+  {
+    id: 'best-insurer-for-contents',
+    question: 'Which is the best home contents insurer in NZ?',
+    answer: `There's no single best insurer — the right choice depends on your situation, location, and what you're insuring. In 2026, AMP is most often the cheapest in comparison tools (cheapest more than 30% of the time). Tower has been awarded Canstar's Insurer of the Year for Home and Contents two years running (2024–2025). AA Insurance has been voted NZ's Most Trusted General Insurer for 15 consecutive years. The best policy balances premium cost, cover features, sub-limits on valuables, and claims reputation. A licensed adviser can compare the full market for you.`,
+    category: 'Basics',
+  },
+  {
+    id: 'temporary-accommodation',
+    question: 'What happens if my home is damaged and I have to move out?',
+    answer: `Most comprehensive contents policies include temporary accommodation cover, which pays for alternative housing if your home becomes uninhabitable after an insured event — fire, flood, earthquake, or other covered damage. AMI offers up to $20,000 (or 12 months, whichever is less); AA Insurance and State also offer $20,000; Tower's Standard policy provides $15,000. Check the time cap on your policy as well as the dollar limit. This cover is particularly important for renters, who may have limited options for alternative accommodation.`,
+    category: 'Cover & Limits',
+  },
+  {
+    id: 'how-to-lower-premium',
+    question: 'How can I reduce my contents insurance premium?',
+    answer: `Several approaches can lower your premium: Increase your excess (moving from $250 to $1,000 can save 30%+). Pay annually rather than monthly to avoid instalment fees. Install a monitored burglar alarm — some insurers discount this. Review and adjust your sum insured if you've sold high-value items. Compare the market every 12 months — premiums change annually and the cheapest insurer last year may not be cheapest now. Never reduce your sum insured below genuine replacement cost, as underinsurance can cost you far more than the premium saving.`,
+    category: 'Cost',
+  },
+  {
+    id: 'moving-house-covered',
+    question: 'Are my contents covered when I move house?',
+    answer: `Many policies include a moving house benefit that covers contents during a move — typically for up to 14 days at both your old and new address. Tower's policies explicitly include this. However, not all policies cover contents during transit or moving, and some may have limitations on the period. Check your policy wording before you move. If your policy doesn't include transit cover, ask your adviser about temporary cover for the moving period.`,
+    category: 'Cover & Limits',
+  },
+  {
+    id: 'students-contents-insurance',
+    question: 'Do students at university need their own contents insurance?',
+    answer: `Usually yes. If you're a student in a hall of residence, hostel, or rental flat, your parents' contents policy typically does not cover your belongings — though Tower's policies offer up to $5,000–$10,000 for dependent children in university halls or boarding school, depending on the policy tier. In most cases, students need their own standalone policy. Student contents policies are available and generally affordable for modest sum insured levels.`,
+    category: 'Renters',
+  },
+  {
+    id: 'wellington-contents-insurance',
+    question: 'Why is contents insurance more expensive in Wellington?',
+    answer: `Wellington consistently has the highest contents premiums in NZ — averaging $995/year in Q1 2026 compared to $676/year in Auckland. The primary reason is Wellington's significantly higher earthquake exposure and severe weather risk. Insurers use risk-based pricing, and Wellington's location on major fault lines means higher potential claim costs. Your contents policy does cover earthquake damage (unlike NHC/EQC, which only covers buildings), so in Wellington it's particularly important to ensure your sum insured is adequate and your temporary accommodation limit is sufficient.`,
+    category: 'Cost',
+  },
+  {
+    id: 'nhc-eqc-contents',
+    question: `Does EQC (NHC) cover my contents in an earthquake?`,
+    answer: `No. The Natural Hazards Commission (NHC, formerly EQC) only provides cover for residential buildings and certain residential land — not for contents or personal belongings. Your household contents are not covered by NHC regardless of what caused the damage. Contents are only covered by your private home contents insurance policy. This is a common misconception, particularly in earthquake-prone areas. Make sure your private contents policy explicitly includes natural disaster cover.`,
+    category: 'Cover & Limits',
+  },
+  {
+    id: 'claims-process',
+    question: 'How do I make a contents insurance claim?',
+    answer: `Contact your insurer as soon as possible — most insurers have 24/7 claims lines or online portals. Document everything: take photos and videos of all damaged items. Make a list of affected belongings with estimated replacement values. For theft, file a police report — most insurers require this. Keep receipts for any emergency repairs or temporary purchases. Your insurer will assign a claims assessor to review the claim. If you can't reach agreement, disputes can be referred to the Insurance and Financial Services Ombudsman (IFSO), a free external resolution service.`,
     category: 'Claims',
-    question: 'What happens if my tiny home is a total loss?',
-    answer: 'If your tiny home is a total loss (destroyed by fire, flood, or another insured event), your insurer will pay out the sum insured under your policy. For custom-built tiny homes, it\'s important that the sum insured reflects the true replacement cost — not market value. Some policies offer agreed value, guaranteeing the insured sum is paid without depreciation deductions. Your adviser will help you set the right sum insured at inception and review it periodically as rebuild costs change.',
   },
   {
-    category: 'Claims',
-    question: 'How long does a tiny home insurance claim take?',
-    answer: 'Claim timelines vary depending on the nature of the loss, the complexity of the damage, and the insurer\'s processes. Simple claims (contents theft, minor damage) can be settled within days to a few weeks. Major structural claims may take longer, particularly if building consents are required for repairs or if there are EQC interactions. Your adviser acts as your advocate throughout the claims process — a significant advantage of using a broker over direct insurance.',
-  },
-  // Working with an Adviser
-  {
-    category: 'Working with an Adviser',
-    question: 'Why use a broker instead of going direct to an insurer?',
-    answer: 'For tiny homes, using a specialist broker is particularly valuable. The tiny home insurance market in New Zealand is thin — few insurers offer appropriate cover, and policy wordings vary significantly. A broker who understands the market knows which insurers will actually respond at claim time for your specific type of tiny home, can negotiate on your behalf, and acts as your advocate throughout the claims process. There\'s no additional cost to you for using a broker — they\'re paid by commission from the insurer.',
+    id: 'broker-vs-direct',
+    question: 'Should I use a broker or buy contents insurance directly?',
+    answer: `Both are valid, but a broker adds particular value when your situation is complex — if you own high-value items, run a home-based business, are a landlord, or have had previous claims. A NZ-licensed financial adviser is legally required (under the Financial Markets Conduct Act 2013) to act in your best interests and can compare across multiple insurers to find the right fit. They can also advocate for you at claim time. Buying direct is convenient for straightforward situations, but without professional advice you may miss important cover features or overpay.`,
+    category: 'Basics',
   },
   {
-    category: 'Working with an Adviser',
-    question: 'How quickly will I hear from an adviser after submitting a quote request?',
-    answer: 'Our NZ-licensed insurance advisers aim to respond to all enquiries within one business day. For straightforward enquiries, you\'ll typically receive a call or email within a few hours during business hours. Our advisers are based in New Zealand and understand the local market, council requirements, and the specific challenges that tiny home owners face when obtaining insurance.',
+    id: 'fire-emergency-levy',
+    question: `What is the Fire and Emergency levy on my insurance bill?`,
+    answer: `The Fire and Emergency NZ (FENZ) levy is added to all residential insurance premiums to fund the fire service. For contents policies, the maximum levy is currently $23.90 per year (dropping to $21.48 from July 2026). It appears as a separate line item on your invoice. This is a government levy — consistent across all insurers — and is not part of the insurer's premium calculation.`,
+    category: 'Cost',
   },
   {
-    category: 'Working with an Adviser',
-    question: 'Is the quote and consultation free?',
-    answer: 'Yes — requesting a quote and speaking with one of our advisers is completely free and without obligation. Our advisers are remunerated by commission from insurers, so there\'s no direct cost to you for the advice and quote comparison service. You\'re under no obligation to proceed with any quote you receive.',
+    id: 'what-is-gradual-damage',
+    question: `What is a 'gradual damage' extension?`,
+    answer: `Standard policies exclude gradual damage — deterioration that occurs slowly over time, like rot or mould from a hidden leaking pipe. A gradual damage extension covers the cost of fixing damage from a leak you couldn't reasonably have detected, typically up to $2,000–$3,000. This is more commonly a feature of house policies than contents policies, but it's worth asking your adviser whether the policy you're considering has any gradual damage protections.`,
+    category: 'Cover & Limits',
   },
 ];

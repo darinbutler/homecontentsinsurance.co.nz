@@ -1,79 +1,186 @@
-import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
-  title: 'About TinyHomeInsurance.co.nz — Specialist NZ Tiny Home Insurance Advisers',
-  description: 'TinyHomeInsurance.co.nz connects tiny home owners with NZ-licensed insurance advisers who specialise in THOWs, container homes, and off-grid dwellings.',
+export const metadata: Metadata = {
+  title: 'About HomeContentsInsurance.co.nz — NZ Home Contents Insurance Advisers',
+  description: 'HomeContentsInsurance.co.nz connects Kiwis with NZ-licensed insurance advisers to find affordable, comprehensive home contents cover.',
+  openGraph: {
+    title: 'About HomeContentsInsurance.co.nz',
+    description: 'NZ home contents insurance comparison and broker referral service',
+    type: 'website',
+  },
 };
 
 export default function AboutPage() {
   return (
-    <div className="bg-stone-50 min-h-screen">
-      <div className="bg-brand-900 text-white py-14">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-extrabold mb-4">About TinyHomeInsurance.co.nz</h1>
-          <p className="text-xl text-brand-100">
-            Connecting tiny home owners with specialist insurance advisers across New Zealand.
+    <div className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="relative py-16 bg-gradient-to-br from-brand-700 to-brand-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">About HomeContentsInsurance.co.nz</h1>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto">
+            Helping Kiwis find affordable, comprehensive home contents insurance.
           </p>
         </div>
-      </div>
+      </section>
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-10">
-        <div className="bg-white rounded-xl border border-stone-200 p-8">
-          <h2 className="text-2xl font-bold text-stone-900 mb-4">Why We Exist</h2>
-          <p className="text-stone-700 leading-relaxed mb-4">
-            Tiny home living is growing rapidly across New Zealand — but the insurance industry hasn't always kept pace. Tiny home owners routinely discover that standard house insurance policies weren't written with their homes in mind. Policies get declined because the home is on wheels, or because it uses non-standard materials, or because it's located off-grid without a conventional street address.
+        {/* Who We Are */}
+        <section className="bg-blue-50 rounded-lg p-8 border border-blue-100">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Who We Are</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            HomeContentsInsurance.co.nz is a home contents insurance broker referral service. We help New Zealanders
+            compare home contents insurance and connect with licensed insurance advisers who can arrange affordable,
+            comprehensive cover for your belongings.
           </p>
-          <p className="text-stone-700 leading-relaxed">
-            TinyHomeInsurance.co.nz was created to solve this problem. We connect tiny home owners with NZ-licensed insurance advisers who understand the tiny home market — advisers who know which insurers will actually cover your specific build, and who can arrange comprehensive cover without the usual runaround.
+          <p className="text-gray-700 leading-relaxed">
+            We exist because shopping for home contents insurance can be confusing. There are multiple insurers, dozens
+            of policy options, varying coverage limits, and significant premium differences for identical cover. We make
+            it simpler by connecting you with advisers who understand the NZ market and can find the best deal for your
+            situation.
           </p>
-        </div>
+        </section>
 
-        <div className="bg-white rounded-xl border border-stone-200 p-8">
-          <h2 className="text-2xl font-bold text-stone-900 mb-4">How It Works</h2>
-          <div className="space-y-4 text-stone-700 leading-relaxed">
-            <p>We are a referral service. When you complete a quote request on this website, we pass your enquiry to NZ-licensed financial advisers who specialise in property and specialty insurance. These advisers are regulated under the Financial Markets Conduct Act 2013 and operate under the Full Licence or Transitional Licence regime.</p>
-            <p>Our advisers aren't tied to a single insurer — they have access to the broking market and will source options from multiple underwriters to find the best fit for your tiny home and situation.</p>
-            <p>There is no direct cost to you for using this service. Advisers earn commission from the insurer when a policy is placed. You're under no obligation to proceed with any quote you receive.</p>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-xl border border-stone-200 p-8">
-          <h2 className="text-2xl font-bold text-stone-900 mb-6">What We Cover</h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {[
-              '🚛 Tiny houses on wheels (THOW)',
-              '🏠 Fixed-foundation tiny homes',
-              '📦 Container homes',
-              '☀️ Off-grid dwellings and cabins',
-              '🏕️ Park homes and relocatable homes',
-              '🔑 Tiny home rental and Airbnb',
-              '⚡ Off-grid systems (solar, battery)',
-              '🛡️ Public liability for tiny home owners',
-            ].map(item => (
-              <div key={item} className="flex items-center gap-3 text-stone-700">
-                <span>{item}</span>
+        {/* How We Work */}
+        <section className="bg-blue-50 rounded-lg p-8 border border-blue-100">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">How We Work</h2>
+          <div className="space-y-6">
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-700 text-white rounded-full flex items-center justify-center font-semibold">
+                1
               </div>
-            ))}
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900 mb-2">You Submit Your Details</h3>
+                <p className="text-gray-700">
+                  Tell us about your home, contents, and insurance needs via our simple quote form. It takes just a few minutes.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-700 text-white rounded-full flex items-center justify-center font-semibold">
+                2
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900 mb-2">We Connect You With Advisers</h3>
+                <p className="text-gray-700">
+                  Your enquiry goes to NZ-licensed financial advisers who specialise in home and contents insurance.
+                  They are regulated under the Financial Markets Conduct Act 2013.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-8 h-8 bg-brand-700 text-white rounded-full flex items-center justify-center font-semibold">
+                3
+              </div>
+              <div>
+                <h3 className="font-semibold text-lg text-gray-900 mb-2">Advisers Find Your Best Options</h3>
+                <p className="text-gray-700">
+                  Our advisers are not tied to a single insurer. They access the broker market to source competitive
+                  quotes from multiple underwriters. You get options, not hard sell.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div className="bg-white rounded-xl border border-stone-200 p-8">
-          <h2 className="text-2xl font-bold text-stone-900 mb-4">Financial Advice Disclosure</h2>
-          <p className="text-stone-700 leading-relaxed mb-4">
-            TinyHomeInsurance.co.nz is a lead generation and referral service. We are not a licensed financial adviser, insurer, or insurance broker. The information on this website is general in nature and does not constitute financial advice.
-          </p>
-          <p className="text-stone-700 leading-relaxed">
-            The advisers we refer enquiries to are NZ-licensed financial advisers regulated under the Financial Markets Conduct Act 2013. Before proceeding with any insurance product, you will receive a disclosure statement from your adviser outlining their licensing, commissions, and any conflicts of interest.
-          </p>
-        </div>
+        {/* Our Commitment */}
+        <section className="bg-blue-50 rounded-lg p-8 border border-blue-100">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Commitment</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <span className="text-brand-700 text-2xl">✓</span>
+                FMCA Regulated
+              </h3>
+              <p className="text-gray-700 text-sm">
+                All advisers we refer are licensed financial advisers regulated under the Financial Markets Conduct Act 2013.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <span className="text-brand-700 text-2xl">✓</span>
+                No Cost to You
+              </h3>
+              <p className="text-gray-700 text-sm">
+                Using this service is free. Advisers earn commission from insurers when a policy is placed. You pay no fee.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <span className="text-brand-700 text-2xl">✓</span>
+                No Obligation
+              </h3>
+              <p className="text-gray-700 text-sm">
+                Getting quotes is not a commitment. You can decline any offer without penalty. The choice is yours.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
+                <span className="text-brand-700 text-2xl">✓</span>
+                Fast Response
+              </h3>
+              <p className="text-gray-700 text-sm">
+                Advisers aim to contact you within one business day. Get quotes quickly and make informed decisions.
+              </p>
+            </div>
+          </div>
+        </section>
 
-        <div className="bg-brand-800 rounded-2xl p-8 text-white text-center">
-          <h2 className="text-2xl font-bold mb-3">Ready to Get Started?</h2>
-          <p className="text-brand-100 mb-6">Submit a quote request and a NZ-licensed adviser will be in touch within one business day.</p>
-          <Link href="/contact/" className="inline-flex items-center gap-2 bg-white text-brand-800 font-bold py-3 px-8 rounded-xl hover:bg-brand-50 transition">
-            Get a Free Quote →
-          </Link>
-        </div>
+        {/* Trust Badges */}
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="bg-gray-100 rounded-lg p-6 text-center">
+            <div className="text-3xl mb-2">🛡️</div>
+            <h3 className="font-semibold text-gray-900 text-sm mb-1">NZ-Licensed Advisers</h3>
+            <p className="text-xs text-gray-600">Regulated and professional</p>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 text-center">
+            <div className="text-3xl mb-2">📋</div>
+            <h3 className="font-semibold text-gray-900 text-sm mb-1">FMCA Regulated</h3>
+            <p className="text-xs text-gray-600">Financial Markets Conduct Act</p>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 text-center">
+            <div className="text-3xl mb-2">💰</div>
+            <h3 className="font-semibold text-gray-900 text-sm mb-1">No Cost to You</h3>
+            <p className="text-xs text-gray-600">Free comparison service</p>
+          </div>
+          <div className="bg-gray-100 rounded-lg p-6 text-center">
+            <div className="text-3xl mb-2">⏱️</div>
+            <h3 className="font-semibold text-gray-900 text-sm mb-1">1 Business Day</h3>
+            <p className="text-xs text-gray-600">Fast response time</p>
+          </div>
+        </section>
+
+        {/* Financial Services Disclosure */}
+        <section className="bg-gray-50 rounded-lg p-8 border border-gray-200">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Financial Services Disclosure</h2>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            HomeContentsInsurance.co.nz is a lead generation and referral service. We are not a licensed financial adviser,
+            insurer, or insurance broker. The information on this website is general in nature and does not constitute
+            financial advice or a recommendation to purchase any product.
+          </p>
+          <p className="text-gray-700 leading-relaxed mb-4">
+            The advisers we refer enquiries to are NZ-licensed financial advisers regulated under the Financial Markets
+            Conduct Act 2013. Before proceeding with any insurance product, you will receive a disclosure statement from
+            your adviser outlining their licensing, commissions, and any conflicts of interest.
+          </p>
+          <p className="text-gray-700 leading-relaxed">
+            This website is provided for information purposes only. We do not underwrite, sell, or issue insurance policies.
+            All insurance is arranged through the advisers we refer and the underwriting insurers.
+          </p>
+        </section>
+
+        {/* CTA */}
+        <section className="bg-brand-700 text-white rounded-lg p-8 text-center">
+          <h2 className="text-3xl font-bold mb-3">Ready to Compare?</h2>
+          <p className="text-lg mb-6 max-w-2xl mx-auto">
+            Get quotes from multiple home contents insurers in minutes. No obligation, no cost.
+          </p>
+          <a
+            href="/contact"
+            className="inline-block bg-white text-brand-700 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+          >
+            Get Started
+          </a>
+        </section>
       </div>
     </div>
   );
