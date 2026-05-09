@@ -28,7 +28,7 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
 
   return (
     <div className="bg-slate-50 min-h-screen">
-      <div className="bg-gradient-to-br from-brand-800 to-brand-900 text-white py-12">
+      <div className="text-white py-12 relative" style={{backgroundImage: `linear-gradient(to bottom right, rgba(15,30,80,0.82) 0%, rgba(29,78,216,0.65) 55%, rgba(10,20,60,0.88) 100%), url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1600&auto=format&fit=crop&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center 40%'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <Link href="/coverage/" className="text-brand-300 hover:text-white text-sm font-semibold mb-4 inline-block">
             ← Back to Coverage Types

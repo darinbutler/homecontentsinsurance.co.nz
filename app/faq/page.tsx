@@ -236,7 +236,7 @@ export default function FAQPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative py-16 bg-gradient-to-br from-brand-700 to-brand-800 text-white">
+      <section className="relative py-16 text-white" style={{backgroundImage: `linear-gradient(to bottom right, rgba(15,30,80,0.82) 0%, rgba(29,78,216,0.65) 55%, rgba(10,20,60,0.88) 100%), url('https://images.unsplash.com/photo-1484154218962-a197022b5858?w=1600&auto=format&fit=crop&q=80')`, backgroundSize: 'cover', backgroundPosition: 'center 40%'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Home Contents Insurance FAQs</h1>
           <p className="text-lg md:text-xl max-w-2xl mx-auto">

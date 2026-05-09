@@ -43,69 +43,125 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
 
   if (variant === 'full') {
     return (
-      <section className="bg-gradient-to-r from-brand-700 to-brand-800 py-16">
+      <section
+        className="py-16 relative"
+        style={{
+          backgroundImage: `linear-gradient(to bottom right, rgba(15,30,80,0.92) 0%, rgba(29,78,216,0.85) 60%, rgba(10,20,60,0.95) 100%), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&auto=format&fit=crop&q=80')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: trust & benefits */}
             <div className="text-white">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Protect Your Contents?</h2>
-              <p className="text-lg text-brand-100 mb-6">
-                A NZ-licensed adviser will compare options across the market and be in touch within one business day — no obligation.
+              <div className="inline-flex items-center gap-2 bg-white/10 rounded-full px-4 py-1.5 text-blue-200 text-sm font-semibold mb-6 border border-white/20">
+                🛡️ FMCA-Regulated Advisers
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 leading-tight">
+                Ready to Protect Your Contents?
+              </h2>
+              <p className="text-lg text-blue-100 mb-8 leading-relaxed">
+                A licensed adviser will compare options across the market and be in touch within one business day — at no cost to you.
               </p>
-              <ul className="space-y-3 text-brand-100">
-                {['Compare quotes from leading NZ insurers', 'Expert advice for renters, owners & landlords', 'High-value & specified item specialists', 'One business day response'].map(f => (
-                  <li key={f} className="flex items-center gap-2">
-                    <span className="w-5 h-5 rounded-full bg-white/20 flex items-center justify-center text-xs font-bold">✓</span>
-                    {f}
+              <ul className="space-y-4 mb-8">
+                {[
+                  { icon: '✓', text: 'We compare up to 6 leading insurers for you' },
+                  { icon: '✓', text: 'Expert advice for renters, owners & landlords' },
+                  { icon: '✓', text: 'High-value & specified item specialists' },
+                  { icon: '✓', text: 'Average saving of $275/year when switching' },
+                  { icon: '✓', text: 'No obligation — choose only if it works for you' },
+                ].map(f => (
+                  <li key={f.text} className="flex items-start gap-3">
+                    <span className="w-6 h-6 rounded-full bg-green-500/30 border border-green-400/50 flex items-center justify-center text-green-300 text-xs font-bold flex-shrink-0 mt-0.5">{f.icon}</span>
+                    <span className="text-blue-100">{f.text}</span>
                   </li>
                 ))}
               </ul>
-            </div>
-            <form action={actionUrl} method="POST" onSubmit={handleSubmit}
-              className="bg-white rounded-2xl p-8 shadow-xl">
-              {hiddenFields}
-              <div className="space-y-4">
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-1">Full Name</label>
-                  <input type="text" name="name" required placeholder="Your name"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-1">Email</label>
-                  <input type="email" name="email" required placeholder="your@email.com"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-1">Phone</label>
-                  <input type="tel" name="phone" required placeholder="09 XXX XXXX"
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent" />
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-1">I am a...</label>
-                  <select name="who_for" required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent">
-                    <option value="">Select your situation...</option>
-                    {whoFor.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
-                  </select>
-                </div>
-                <div>
-                  <label className="block text-sm font-semibold text-gray-900 mb-1">Cover Required</label>
-                  <select name="cover_type" required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent">
-                    <option value="">Select cover type...</option>
-                    {coverTypes.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
-                  </select>
-                </div>
-                <button type="submit" disabled={submitting}
-                  className="w-full bg-brand-700 hover:bg-brand-800 disabled:bg-brand-500 text-white font-semibold py-3 rounded-lg transition-colors">
-                  {submitting ? 'Submitting…' : 'Get My Quote →'}
-                </button>
-                <div className="border-t pt-4 flex items-center justify-between text-xs text-gray-500">
-                  <span>🔒 256-bit SSL</span>
-                  <span>🚫 No Spam</span>
-                  <span>⚡ 1 Business Day</span>
-                </div>
+              {/* Trust pills */}
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { icon: '🛡️', label: 'FMCA Licensed', sub: 'Regulated advisers' },
+                  { icon: '💰', label: 'Save $275/yr', sub: 'Average saving' },
+                  { icon: '🔍', label: '6 Providers', sub: 'We compare for you' },
+                  { icon: '⚡', label: '1 Business Day', sub: 'Fast response' },
+                ].map(p => (
+                  <div key={p.label} className="bg-white/10 border border-white/20 rounded-xl p-3 backdrop-blur-sm">
+                    <div className="text-xl mb-1">{p.icon}</div>
+                    <div className="text-white font-bold text-sm">{p.label}</div>
+                    <div className="text-blue-200 text-xs">{p.sub}</div>
+                  </div>
+                ))}
               </div>
-            </form>
+            </div>
+
+            {/* Right: form */}
+            <div>
+              <form action={actionUrl} method="POST" onSubmit={handleSubmit}
+                className="bg-white rounded-2xl p-8 shadow-2xl border-2 border-brand-200">
+                {hiddenFields}
+                <div className="mb-6">
+                  <h3 className="text-xl font-extrabold text-slate-900 mb-1">Get Your Personalised Quote Now</h3>
+                  <p className="text-sm text-slate-500">Fill in your details and a licensed adviser will be in touch within one business day.</p>
+                </div>
+                <div className="space-y-4">
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-900 mb-1">Full Name</label>
+                    <input type="text" name="name" required placeholder="Your name"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-900 mb-1">Email</label>
+                    <input type="email" name="email" required placeholder="your@email.com"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-900 mb-1">Phone</label>
+                    <input type="tel" name="phone" required placeholder="09 XXX XXXX"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent" />
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-900 mb-1">I am a...</label>
+                    <select name="who_for" required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent">
+                      <option value="">Select your situation...</option>
+                      {whoFor.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-semibold text-gray-900 mb-1">Cover Required</label>
+                    <select name="cover_type" required
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent">
+                      <option value="">Select cover type...</option>
+                      {coverTypes.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
+                    </select>
+                  </div>
+                  <button type="submit" disabled={submitting}
+                    className="w-full bg-brand-700 hover:bg-brand-800 disabled:bg-brand-500 text-white font-bold py-4 rounded-lg transition-colors text-base shadow-md">
+                    {submitting ? 'Submitting…' : 'Get My Quote — It\'s Free →'}
+                  </button>
+                  {/* Trust badges under button */}
+                  <div className="border-t border-gray-100 pt-4">
+                    <div className="grid grid-cols-3 gap-2">
+                      {[
+                        { icon: '🔒', label: '256-bit SSL', sub: 'Secure' },
+                        { icon: '🚫', label: 'No Spam', sub: 'Ever' },
+                        { icon: '🆓', label: 'No Cost', sub: 'Free to use' },
+                      ].map(b => (
+                        <div key={b.label} className="text-center bg-slate-50 rounded-lg p-2">
+                          <div className="text-lg">{b.icon}</div>
+                          <div className="text-xs font-bold text-slate-700">{b.label}</div>
+                          <div className="text-xs text-slate-500">{b.sub}</div>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-center text-xs text-slate-400 mt-3">
+                      By submitting you agree to our <a href="/privacy/" className="underline hover:text-slate-600">Privacy Policy</a>. Advisers are licensed under the FMCA 2013.
+                    </p>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -115,7 +171,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
   return (
     <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-xl">
       <h3 className="text-xl font-bold text-white mb-1">Get Your Contents Quote</h3>
-      <p className="text-slate-400 text-sm mb-5">NZ-licensed advisers respond within 1 business day</p>
+      <p className="text-slate-400 text-sm mb-5">Licensed advisers respond within 1 business day</p>
       <form action={actionUrl} method="POST" onSubmit={handleSubmit} className="space-y-3">
         {hiddenFields}
         <div>
@@ -153,10 +209,10 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
           className="w-full bg-brand-700 hover:bg-brand-600 disabled:bg-brand-500 text-white font-semibold py-2.5 rounded-lg transition-colors text-sm">
           {submitting ? 'Submitting…' : 'Get My Quote →'}
         </button>
-        <div className="border-t border-slate-700 pt-3 flex items-center justify-between text-xs text-slate-400">
-          <span>🔒 Secure</span>
-          <span>🚫 No Spam</span>
-          <span>⚡ Fast Response</span>
+        <div className="border-t border-slate-700 pt-3 grid grid-cols-3 gap-1 text-center">
+          <div className="text-xs text-slate-400"><span className="block">🔒</span>Secure</div>
+          <div className="text-xs text-slate-400"><span className="block">🚫</span>No Spam</div>
+          <div className="text-xs text-slate-400"><span className="block">🆓</span>Free</div>
         </div>
       </form>
     </div>

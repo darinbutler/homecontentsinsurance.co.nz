@@ -17,7 +17,7 @@ export const blogPosts: BlogPost[] = [
     date: '2025-07-01',
     readTime: '8 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&auto=format&fit=crop&q=80',
     content: `<h2>What Is Home Contents Insurance?</h2>
 <p>Home contents insurance protects the personal items inside your home—furniture, electronics, clothing, and more. Unlike home and contents insurance, which covers both the building structure and your belongings, contents-only policies cover just what's inside.</p>
 <p>In New Zealand, contents insurance is essential for renters, homeowners, and landlords alike. It provides financial protection if your belongings are damaged, stolen, or destroyed.</p>
@@ -62,7 +62,7 @@ export const blogPosts: BlogPost[] = [
     date: '2025-08-15',
     readTime: '6 min read',
     category: 'Renters',
-    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Why Renters Need Contents Insurance</h2>
 <p>As a renter in New Zealand, you're responsible for protecting your personal belongings. Your landlord's building insurance doesn't cover your furniture, electronics, or clothing—that's where renters contents insurance comes in.</p>
 <p>Renters contents insurance is affordable, easy to set up, and provides peace of mind knowing your belongings are protected.</p>
@@ -104,7 +104,7 @@ export const blogPosts: BlogPost[] = [
     date: '2025-09-22',
     readTime: '5 min read',
     category: 'Tips & Advice',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Understanding Sum Insured</h2>
 <p>Sum insured is the maximum amount your insurance company will pay if you need to make a claim. It's not the amount you pay for insurance—it's the limit of their liability.</p>
 <p>Choosing the right sum insured is one of the most important decisions when buying contents insurance in New Zealand.</p>
@@ -141,7 +141,7 @@ export const blogPosts: BlogPost[] = [
     date: '2025-10-10',
     readTime: '7 min read',
     category: 'Landlords',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&auto=format&fit=crop&q=80',
     content: `<h2>What Is Landlord Contents Insurance?</h2>
 <p>Landlord contents insurance protects the items you, as a landlord, provide in your rental property—carpets, curtains, appliances, and furniture. It's separate from landlord building insurance and covers your personal property inside the rental.</p>
 
@@ -179,7 +179,7 @@ export const blogPosts: BlogPost[] = [
     date: '2025-11-05',
     readTime: '6 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Why High-Value Items Need Separate Cover</h2>
 <p>Standard contents insurance policies often have sub-limits on individual items—typically $2,000-$5,000 per item. If you own jewelry, artwork, collectibles, or other valuable possessions, they may not be fully covered by standard policies.</p>
 
@@ -219,7 +219,7 @@ export const blogPosts: BlogPost[] = [
     date: '2025-12-01',
     readTime: '5 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&auto=format&fit=crop&q=80',
     content: `<h2>What Is Portable Valuables Cover?</h2>
 <p>Portable valuables cover extends your contents insurance to protect personal items when you're away from home. It covers jewelry, cameras, laptops, and other valuables while traveling, at work, or anywhere in New Zealand.</p>
 
@@ -255,7 +255,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-01-12',
     readTime: '5 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1633613286991-611bcfb63dba?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&auto=format&fit=crop&q=80',
     content: `<h2>What Is Accidental Damage Cover?</h2>
 <p>Accidental damage cover is an optional add-on to your contents insurance that protects against damage caused by accidents—spilled coffee on electronics, dropped mirrors, or furniture damaged during moving.</p>
 
@@ -291,7 +291,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-02-08',
     readTime: '6 min read',
     category: 'Tips & Advice',
-    image: 'https://images.unsplash.com/photo-1563207153-f403bf289096?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Average Contents Insurance Costs</h2>
 <p>In New Zealand, contents insurance costs vary widely depending on your sum insured and location. Renters might pay $15-30 per month for basic cover, while homeowners with higher sums insured could pay $50-150+ monthly.</p>
 
@@ -333,7 +333,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-03-15',
     readTime: '6 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Contents Insurance vs Building Insurance</h2>
 <p>In New Zealand, contents insurance and building insurance are two separate policies protecting different things. Contents covers your personal belongings; building insurance covers the structure and fixed components of your home.</p>
 
@@ -377,7 +377,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-01',
     readTime: '5 min read',
     category: 'Renters',
-    image: 'https://images.unsplash.com/photo-1523398002649-db0c92c09fcc?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1523398002649-db0c92c09fcc?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Why Students Need Contents Insurance</h2>
 <p>Student accommodation—whether university halls, flat shares, or private rentals—puts your belongings at risk. Contents insurance protects your laptop, gaming console, clothes, and books from theft, damage, or loss.</p>
 
@@ -419,7 +419,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-10',
     readTime: '5 min read',
     category: 'Tips & Advice',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Insurance Coverage During a Move</h2>
 <p>Moving house is one of your belongings' most vulnerable times. Understanding your contents insurance coverage during a move is crucial to ensure your items are protected while in transit.</p>
 
@@ -461,7 +461,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-12',
     readTime: '6 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Why Home Business Insurance Matters</h2>
 <p>If you run a business from home, standard contents insurance might not fully cover your business equipment and assets. Home business contents insurance provides dedicated protection for your office setup and business inventory.</p>
 
@@ -504,7 +504,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-15',
     readTime: '6 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1460925895917-adf4e565db18?w=800&auto=format&fit=crop&q=80',
     content: `<h2>When To Make A Claim</h2>
 <p>If your belongings are damaged, stolen, or destroyed due to an insured incident, you can make a claim. Common claims include theft, fire damage, weather damage, or accidental damage (if covered).</p>
 
@@ -550,7 +550,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-18',
     readTime: '6 min read',
     category: 'Tips & Advice',
-    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&auto=format&fit=crop&q=80',
     content: `<h2>What Is Underinsurance?</h2>
 <p>Underinsurance occurs when your sum insured is less than the total value of your belongings. For example, if your contents are worth $60,000 but you only insure for $45,000, you're underinsured by $15,000.</p>
 
@@ -594,7 +594,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-20',
     readTime: '5 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Why Jewellery Needs Special Cover</h2>
 <p>Fine jewellery—engagement rings, watches, heirlooms—represents significant value and deserves specialized protection. Standard contents policies often have low sub-limits on jewellery, meaning you won't receive full compensation if something precious is lost or damaged.</p>
 
@@ -632,7 +632,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-22',
     readTime: '5 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Electronics Are Valuable Targets</h2>
 <p>Electronics—computers, televisions, gaming consoles, cameras—represent significant value in modern homes. They're also vulnerable to theft, damage from power surges, and accidental breakage.</p>
 
@@ -674,7 +674,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-24',
     readTime: '5 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1546820013-f2e189d00a0d?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1546820013-f2e189d00a0d?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Do Standard Contents Policies Cover Bikes?</h2>
 <p>Many contents insurance policies cover bicycles up to a limit—typically $500-$2,000 per bike. If you own high-value bikes or multiple cycles, you might need additional or specialized coverage.</p>
 
@@ -724,7 +724,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-26',
     readTime: '6 min read',
     category: 'Landlords',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Standard Contents Insurance Won't Cover Airbnb</h2>
 <p>If you rent your home or part of your home on Airbnb, your standard contents insurance probably won't cover you. Insurance policies typically exclude commercial use, including short-term rental to strangers.</p>
 
@@ -771,7 +771,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-28',
     readTime: '6 min read',
     category: 'Cover Types',
-    image: 'https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1489749798305-4fea3ba63d60?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Is Earthquake Damage Covered?</h2>
 <p>In New Zealand, earthquake damage to your belongings is often NOT covered by standard contents insurance. Earthquakes are typically excluded from standard policies because of their catastrophic risk and cost.</p>
 
@@ -810,7 +810,7 @@ export const blogPosts: BlogPost[] = [
     date: '2026-04-30',
     readTime: '7 min read',
     category: 'Guides',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+    image: 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&auto=format&fit=crop&q=80',
     content: `<h2>Why Compare Contents Insurance?</h2>
 <p>Contents insurance premiums vary significantly between providers. Taking time to compare policies could save you hundreds of dollars annually while ensuring you get adequate coverage for your belongings.</p>
 

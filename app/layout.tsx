@@ -36,6 +36,10 @@ export const metadata: Metadata = {
       'Expert home contents insurance advice from NZ-licensed advisers. Get quotes within one business day.',
     images: ['/images/home_contents_insurance.jpg'],
   },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+  },
   robots: {
     index: true,
     follow: true,
