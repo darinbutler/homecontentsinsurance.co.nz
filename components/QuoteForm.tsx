@@ -140,7 +140,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
                   </div>
                   <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
                   <div className="flex justify-center">
-                    <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-theme="light" />
+                    <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-size="invisible" />
                   </div>
                   <button type="submit" disabled={submitting}
                     className="w-full bg-brand-700 hover:bg-brand-800 disabled:bg-brand-500 text-white font-bold py-4 rounded-lg transition-colors text-base shadow-md">
@@ -213,7 +213,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
         </div>
         <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
         <div className="flex justify-center">
-          <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-theme="dark" />
+          <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-size="invisible" />
         </div>
         <button type="submit" disabled={submitting}
           className="w-full bg-brand-700 hover:bg-brand-600 disabled:bg-brand-500 text-white font-semibold py-2.5 rounded-lg transition-colors text-sm">
