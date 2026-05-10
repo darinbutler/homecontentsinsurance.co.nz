@@ -13,7 +13,8 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
   const [submitting, setSubmitting] = useState(false);
   const handleSubmit = () => setSubmitting(true);
 
-  const actionUrl = workerUrl ?? SITE.workerUrl;
+  void workerUrl;
+  const actionUrl = '/api/submit-form';
   const redirectUrl = thankYouUrl ?? SITE.thankYouUrl;
   const subject = formSubject ?? SITE.formSubject;
 
