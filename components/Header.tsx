@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 const navLinks = [
   { label: 'Coverage Types', href: '/coverage/' },
@@ -11,6 +11,12 @@ const navLinks = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => { if (open) setOpen(false); };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [open]);
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-brand-100 shadow-sm h-16 flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex items-center justify-between">
