@@ -1,5 +1,6 @@
 'use client';
-import { useState } from 'react';
+import { useState, FormEvent } from 'react';
+import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 import { SITE } from '../data/site';
 
@@ -11,13 +12,42 @@ interface QuoteFormProps {
 }
 
 export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant = 'compact' }: QuoteFormProps) {
+  const router = useRouter();
   const [submitting, setSubmitting] = useState(false);
-  const handleSubmit = () => setSubmitting(true);
+  const [error, setError] = useState('');
 
   void workerUrl;
-  const actionUrl = '/api/submit-form';
   const redirectUrl = thankYouUrl ?? SITE.thankYouUrl;
   const subject = formSubject ?? SITE.formSubject;
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError('');
+    const fd = new FormData(e.currentTarget);
+    const cfToken = fd.get('cf-turnstile-response');
+    if (!cfToken) {
+      setError('Please wait a moment for the security check to finish, then try again.');
+      return;
+    }
+    const data: Record<string, string> = {};
+    fd.forEach((value, key) => {
+      if (typeof value === 'string') data[key] = value;
+    });
+    setSubmitting(true);
+    try {
+      const res = await fetch('/api/submit-form', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...data, cfTurnstileToken: cfToken }),
+      });
+      if (!res.ok) throw new Error('Submission failed');
+      const target = redirectUrl?.startsWith('http') ? new URL(redirectUrl).pathname : (redirectUrl ?? '/thank-you/');
+      router.push(target);
+    } catch {
+      setError('Something went wrong. Please try again.');
+      setSubmitting(false);
+    }
+  }
 
   const whoFor = [
     ['renter', 'Renter / Tenant'],
@@ -99,7 +129,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
 
             {/* Right: form */}
             <div>
-              <form action={actionUrl} method="POST" onSubmit={handleSubmit}
+              <form onSubmit={handleSubmit}
                 className="bg-white rounded-2xl p-8 shadow-2xl border-2 border-brand-200">
                 {hiddenFields}
                 <div className="mb-6">
@@ -142,6 +172,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
                   <div className="flex justify-center">
                     <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-size="invisible" />
                   </div>
+                  {error && <p className="text-sm bg-red-50 text-red-700 border border-red-200 rounded-lg px-3 py-2">{error}</p>}
                   <button type="submit" disabled={submitting}
                     className="w-full bg-brand-700 hover:bg-brand-800 disabled:bg-brand-500 text-white font-bold py-4 rounded-lg transition-colors text-base shadow-md">
                     {submitting ? 'Submitting…' : 'Get My Quote — It\'s Free →'}
@@ -178,7 +209,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
     <div className="bg-slate-800 rounded-xl p-6 border border-slate-700 shadow-xl">
       <h3 className="text-xl font-bold text-white mb-1">Get Your Contents Quote</h3>
       <p className="text-slate-400 text-sm mb-5">Licensed advisers respond within 1 business day</p>
-      <form action={actionUrl} method="POST" onSubmit={handleSubmit} className="space-y-3">
+      <form onSubmit={handleSubmit} className="space-y-3">
         {hiddenFields}
         <div>
           <label className="block text-xs font-semibold text-slate-300 mb-1">Full Name</label>
@@ -215,6 +246,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
         <div className="flex justify-center">
           <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-size="invisible" />
         </div>
+        {error && <p className="text-xs bg-red-50 text-red-700 border border-red-200 rounded-lg px-3 py-2">{error}</p>}
         <button type="submit" disabled={submitting}
           className="w-full bg-brand-700 hover:bg-brand-600 disabled:bg-brand-500 text-white font-semibold py-2.5 rounded-lg transition-colors text-sm">
           {submitting ? 'Submitting…' : 'Get My Quote →'}
