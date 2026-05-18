@@ -1,8 +1,8 @@
 'use client';
-import { useState, FormEvent } from 'react';
+import { useRef, useState, FormEvent } from 'react';
 import { useRouter } from 'next/navigation';
-import Script from 'next/script';
 import { SITE } from '../data/site';
+import TurnstileWidget, { type TurnstileHandle } from './TurnstileWidget';
 
 interface QuoteFormProps {
   workerUrl?: string;
@@ -13,6 +13,7 @@ interface QuoteFormProps {
 
 export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant = 'compact' }: QuoteFormProps) {
   const router = useRouter();
+  const turnstileRef = useRef<TurnstileHandle>(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState('');
 
@@ -24,17 +25,19 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
     e.preventDefault();
     setError('');
     const fd = new FormData(e.currentTarget);
-    const cfToken = fd.get('cf-turnstile-response');
-    if (!cfToken) {
-      setError('Please wait a moment for the security check to finish, then try again.');
-      return;
-    }
     const data: Record<string, string> = {};
     fd.forEach((value, key) => {
       if (typeof value === 'string') data[key] = value;
     });
     setSubmitting(true);
     try {
+      const cfToken = await turnstileRef.current?.execute();
+      if (!cfToken) {
+        setSubmitting(false);
+        setError('Security check could not complete. Please try again.');
+        return;
+      }
+
       const res = await fetch('/api/submit-form', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -168,10 +171,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
                       {coverTypes.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
                     </select>
                   </div>
-                  <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
-                  <div className="flex justify-center">
-                    <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-size="invisible" />
-                  </div>
+                  <TurnstileWidget ref={turnstileRef} />
                   {error && <p className="text-sm bg-red-50 text-red-700 border border-red-200 rounded-lg px-3 py-2">{error}</p>}
                   <button type="submit" disabled={submitting}
                     className="w-full bg-brand-700 hover:bg-brand-800 disabled:bg-brand-500 text-white font-bold py-4 rounded-lg transition-colors text-base shadow-md">
@@ -242,10 +242,7 @@ export default function QuoteForm({ workerUrl, thankYouUrl, formSubject, variant
             {coverTypes.map(([v, l]) => <option key={v} value={v}>{l}</option>)}
           </select>
         </div>
-        <Script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer strategy="afterInteractive" />
-        <div className="flex justify-center">
-          <div className="cf-turnstile" data-sitekey="0x4AAAAAADMnq1OKyxf3JvVv" data-size="invisible" />
-        </div>
+        <TurnstileWidget ref={turnstileRef} />
         {error && <p className="text-xs bg-red-50 text-red-700 border border-red-200 rounded-lg px-3 py-2">{error}</p>}
         <button type="submit" disabled={submitting}
           className="w-full bg-brand-700 hover:bg-brand-600 disabled:bg-brand-500 text-white font-semibold py-2.5 rounded-lg transition-colors text-sm">
