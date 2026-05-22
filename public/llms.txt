@@ -1,36 +1,89 @@
-# TinyHomeInsurance.co.nz
+# HomeContentsInsurance.co.nz
 
-> Specialist insurance for tiny homes, tiny houses on wheels (THOWs), container homes, and off-grid dwellings across New Zealand.
+> New Zealand home contents insurance referral service connecting renters, homeowners, and landlords with NZ-licensed insurance advisers.
 
-TinyHomeInsurance.co.nz is a New Zealand insurance referral service. We connect tiny home owners with NZ-licensed insurance advisers who specialise in non-standard dwellings. Our advisers have access to the broking market and can arrange specialist cover for all types of tiny homes.
+HomeContentsInsurance.co.nz is a lead generation and referral service operating in New Zealand. We connect consumers with NZ-licensed financial advisers who specialise in home contents insurance. Advisers referred through this service hold a Financial Advice Provider (FAP) licence under the Financial Markets Conduct Act 2013 (FMCA). The referral service is free to consumers; advisers earn commission from insurers.
 
 ## What We Cover
 
-- Tiny houses on wheels (THOW) — building, transit, and liability
-- Fixed-foundation tiny homes — building and contents
-- Container homes — structure and contents
-- Off-grid dwellings and cabins — including solar, battery, and rainwater systems
-- Park homes and relocatable homes
-- Tiny home rental and Airbnb cover
-- Public liability for tiny home owners
+- Renters / tenant contents insurance — cover for your belongings when renting
+- Homeowner contents insurance — cover for household items in an owned home
+- Landlord contents insurance — cover for landlord-owned furnishings in rental properties
+- High-value / specified items insurance — jewellery, art, watches, collections
+- Portable valuables cover — items taken outside the home (phones, cameras, laptops)
+- Accidental damage contents insurance — breakage and accidental damage cover
+- Temporary accommodation / loss of use — alternative accommodation after a covered event
 
-## Key Pages
+## Coverage Type Pages
 
-- /coverage/ — All coverage types with detailed descriptions
-- /coverage/building-structure/ — Building and structure insurance for tiny homes
-- /coverage/contents-insurance/ — Contents insurance for tiny home residents
-- /coverage/transit-towing-cover/ — Transit cover for THOWs
-- /coverage/public-liability/ — Public liability insurance
-- /coverage/off-grid-systems/ — Cover for solar, battery and off-grid infrastructure
-- /coverage/loss-of-use/ — Alternative accommodation cover
-- /coverage/landlord-insurance/ — Landlord cover for rental tiny homes
-- /faq/ — Frequently asked questions about tiny home insurance in NZ
-- /blog/ — Guides and articles on tiny home insurance
-- /contact/ — Quote request form
-- /about/ — About the service and financial advice disclosure
+- /coverage/ — Overview of all contents insurance cover types
+- /coverage/renters-contents/ — Renters and tenant contents insurance in NZ
+- /coverage/homeowner-contents/ — Homeowner contents insurance in NZ
+- /coverage/landlord-contents/ — Landlord contents insurance for rental properties
+- /coverage/high-value-items/ — High-value and specified items insurance
+- /coverage/portable-valuables/ — Portable valuables and away-from-home cover
+- /coverage/accidental-damage/ — Accidental damage contents insurance
+- /coverage/temporary-accommodation/ — Temporary accommodation and loss-of-use cover
+
+## SEO Landing Pages
+
+- /renters-insurance/ — Contents insurance for renters and tenants in NZ
+- /landlord-contents-insurance/ — Landlord contents insurance in NZ
+- /high-value-contents-insurance/ — High-value contents and specified items cover
+- /contents-insurance-cost/ — How much does contents insurance cost in NZ?
+
+## Core Pages
+
+- / — Homepage: service overview, how it works, coverage types, compare, blog
+- /compare/ — Compare leading NZ home contents insurance providers
+- /faq/ — Frequently asked questions about contents insurance in NZ
+- /contact/ — Quote request form — advisers respond within one business day
+- /about/ — About the service, team, and financial advice disclosure
+- /thank-you/ — Post-submission confirmation page
+
+## Blog Articles (20 guides)
+
+- /blog/home-contents-insurance-guide-nz/ — Complete guide to home contents insurance in NZ
+- /blog/renters-contents-insurance-nz/ — Contents insurance for renters: what's covered
+- /blog/what-is-sum-insured-contents-nz/ — Understanding sum insured for contents insurance
+- /blog/landlord-contents-insurance-nz/ — Landlord contents insurance explained
+- /blog/high-value-items-insurance-nz/ — High-value items: what you need to know
+- /blog/portable-valuables-cover-nz/ — Portable valuables cover for items away from home
+- /blog/accidental-damage-contents-insurance/ — Accidental damage: is it worth adding?
+- /blog/contents-insurance-cost-nz/ — How much does contents insurance cost in NZ?
+- /blog/home-contents-vs-house-insurance/ — Contents vs house insurance: what's the difference?
+- /blog/contents-insurance-for-students-nz/ — Contents insurance for students in NZ
+- /blog/moving-house-contents-insurance-nz/ — Contents insurance when moving house
+- /blog/home-business-contents-insurance-nz/ — Home business and contents insurance
+- /blog/making-home-contents-claim-nz/ — How to make a home contents insurance claim
+- /blog/underinsurance-home-contents-nz/ — Underinsurance: the hidden risk for NZ households
+- /blog/jewellery-insurance-nz/ — Jewellery insurance in NZ: rings, watches, and valuables
+- /blog/electronics-contents-insurance-nz/ — Electronics and gadget insurance in NZ
+- /blog/bicycle-insurance-nz-contents/ — Bicycle insurance under home contents in NZ
+- /blog/airbnb-host-contents-insurance-nz/ — Contents insurance for Airbnb hosts in NZ
+- /blog/earthquake-contents-insurance-nz/ — Earthquake and EQC: what contents insurance covers
+- /blog/comparing-contents-insurance-nz/ — How to compare contents insurance in NZ
+
+## Legal Pages
+
+- /privacy/ — Privacy policy
+- /terms/ — Terms and conditions
+- /disclaimer/ — Financial advice disclaimer and disclosure
 
 ## About This Service
 
-TinyHomeInsurance.co.nz is a lead generation and referral service, not an insurer or licensed financial adviser. Advisers referred through this service are NZ-licensed under the Financial Markets Conduct Act 2013. The service is free to consumers; advisers earn commission from insurers.
+HomeContentsInsurance.co.nz is not an insurer or licensed financial adviser. We are a lead generation and referral service. All advisers referred through this service are independently licensed under the Financial Markets Conduct Act 2013. Adviser fees are funded by insurer commission; there is no cost to the consumer.
+
+## NZ Market Context
+
+New Zealand's home contents insurance market is dominated by a small number of major providers: AA Insurance, AMI (IAG), State (IAG), Tower Insurance, Vero, and Chubb Life. Contents insurance in NZ typically covers theft, fire, water damage, accidental damage (optional), and EQC natural hazard events. EQC (Earthquake Commission) provides a base layer of natural hazard cover (up to NZ$300,000 for contents since 2024), with private insurer cover applying above that threshold.
+
+Key regulatory context:
+- Financial advisers providing personalised advice must hold a FAP licence under the FMCA 2013
+- EQC Act 2022 revised natural hazard cover effective 1 October 2022
+- Insurance Contract Law reform under review by MBIE as of 2025
+
+## Contact
 
 Contact: hello@cover4you.co.nz
+Sitemap: https://www.homecontentsinsurance.co.nz/sitemap.xml

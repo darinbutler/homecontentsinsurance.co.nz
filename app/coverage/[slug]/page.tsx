@@ -16,6 +16,18 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${ct.name} | HomeContentsInsurance.co.nz`,
     description: ct.shortDesc,
+    alternates: { canonical: `https://www.homecontentsinsurance.co.nz/coverage/${slug}/` },
+    openGraph: {
+      title: `${ct.name} | HomeContentsInsurance.co.nz`,
+      description: ct.shortDesc,
+      url: `https://www.homecontentsinsurance.co.nz/coverage/${slug}/`,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${ct.name} | HomeContentsInsurance.co.nz`,
+      description: ct.shortDesc,
+    },
   };
 }
 
@@ -171,7 +183,28 @@ export default async function CoverageTypePage({ params }: { params: Promise<{ s
         name: `${ct.name} — ${SITE.name}`,
         description: ct.description,
         provider: { '@type': 'InsuranceAgency', name: SITE.name, url: SITE.domain },
-        areaServed: 'NZ',
+        areaServed: { '@type': 'Country', name: 'New Zealand' },
+        url: `https://www.homecontentsinsurance.co.nz/coverage/${ct.slug}/`,
+      })}} />
+      {cc?.faqs && cc.faqs.length > 0 && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: cc.faqs.map((faq: { q: string; a: string }) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: { '@type': 'Answer', text: faq.a },
+          })),
+        })}} />
+      )}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.homecontentsinsurance.co.nz/' },
+          { '@type': 'ListItem', position: 2, name: 'Coverage Types', item: 'https://www.homecontentsinsurance.co.nz/coverage/' },
+          { '@type': 'ListItem', position: 3, name: ct.name, item: `https://www.homecontentsinsurance.co.nz/coverage/${ct.slug}/` },
+        ],
       })}} />
     </div>
   );
