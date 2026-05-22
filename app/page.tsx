@@ -451,7 +451,7 @@ export default function HomePage() {
         '@type': 'InsuranceAgency',
         name: 'HomeContentsInsurance.co.nz',
         description: 'Home contents insurance broker referral service for renters, homeowners, and landlords.',
-        url: 'https://homecontentsinsurance.co.nz',
+        url: 'https://www.homecontentsinsurance.co.nz',
         areaServed: 'NZ',
         serviceType: ['Renters Contents', 'Homeowner Contents', 'Landlord Contents'],
         priceRange: 'NZD$67/month',

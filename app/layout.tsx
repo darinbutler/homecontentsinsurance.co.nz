@@ -10,11 +10,11 @@ export const metadata: Metadata = {
   },
   description:
     'Compare home contents insurance in New Zealand. Expert advice for renters, homeowners and landlords from NZ-licensed advisers. Get quotes within one business day.',
-  metadataBase: new URL('https://homecontentsinsurance.co.nz'),
+  metadataBase: new URL('https://www.homecontentsinsurance.co.nz'),
   openGraph: {
     type: 'website',
     locale: 'en_NZ',
-    url: 'https://homecontentsinsurance.co.nz',
+    url: 'https://www.homecontentsinsurance.co.nz',
     siteName: 'HomeContentsInsurance.co.nz',
     title: 'Home Contents Insurance NZ | Compare & Get Covered',
     description:
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://homecontentsinsurance.co.nz',
+    canonical: 'https://www.homecontentsinsurance.co.nz',
   },
 }
 
@@ -70,7 +70,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'HomeContentsInsurance.co.nz',
-              url: 'https://homecontentsinsurance.co.nz',
+              url: 'https://www.homecontentsinsurance.co.nz',
               description:
                 'Home contents insurance broker referral service connecting NZ renters, homeowners, and landlords with expert FMCA-regulated advisers.',
               sameAs: [
@@ -98,7 +98,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'WebSite',
-              url: 'https://homecontentsinsurance.co.nz',
+              url: 'https://www.homecontentsinsurance.co.nz',
               name: 'HomeContentsInsurance.co.nz',
               description:
                 'Compare home contents insurance and get expert advice from NZ-licensed advisers.',
@@ -107,7 +107,7 @@ export default function RootLayout({
                 target: {
                   '@type': 'EntryPoint',
                   urlTemplate:
-                    'https://homecontentsinsurance.co.nz/search?q={search_term_string}',
+                    'https://www.homecontentsinsurance.co.nz/search?q={search_term_string}',
                 },
                 'query-input': 'required name=search_term_string',
               },

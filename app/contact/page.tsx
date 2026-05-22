@@ -9,58 +9,37 @@ export const metadata = {
 export default function ContactPage() {
   return (
     <div className="bg-slate-50 min-h-screen">
-      <div
-        className="text-white py-14 relative"
-        style={{
-          backgroundImage: `linear-gradient(to bottom right, rgba(15,30,80,0.82) 0%, rgba(29,78,216,0.65) 55%, rgba(10,20,60,0.88) 100%), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&auto=format&fit=crop&q=80')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 40%',
-        }}
-      >
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl font-extrabold mb-4">Get Your Contents Insurance Quote</h1>
-          <p className="text-xl text-blue-100">
-            Complete the form below and a NZ-licensed adviser will be in touch within one business day.
-          </p>
+      {/* Full-width quote form section */}
+      <QuoteForm variant="full" />
+
+      {/* What Happens Next + disclosure */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+        <h2 className="text-2xl font-extrabold text-slate-900 text-center mb-8">What Happens Next?</h2>
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          {[
+            { n: '1', title: 'We receive your enquiry', desc: 'Your details are securely forwarded to a NZ-licensed insurance adviser.' },
+            { n: '2', title: 'Adviser reviews your situation', desc: 'The adviser assesses your cover requirements — whether you rent, own, or are a landlord.' },
+            { n: '3', title: 'You receive a call or email', desc: 'Within one business day, the adviser contacts you with options and a quote.' },
+            { n: '4', title: 'Choose your cover', desc: `Compare options and proceed only if you're happy. No pressure, no obligation.` },
+          ].map(step => (
+            <div key={step.n} className="bg-white rounded-xl border border-slate-200 p-5 flex flex-col items-start">
+              <span className="w-9 h-9 rounded-full bg-brand-700 text-white font-bold text-sm flex items-center justify-center mb-4 flex-shrink-0">{step.n}</span>
+              <div className="font-semibold text-slate-900 mb-1">{step.title}</div>
+              <div className="text-slate-600 text-sm leading-relaxed">{step.desc}</div>
+            </div>
+          ))}
         </div>
-      </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-2 gap-12 items-start">
-          <div>
-            <QuoteForm variant="full" />
+        <div className="grid sm:grid-cols-2 gap-6">
+          <div className="bg-brand-50 rounded-xl border border-brand-200 p-6">
+            <h3 className="font-bold text-brand-900 mb-3">Contact Directly</h3>
+            <p className="text-brand-800 text-sm mb-2">Prefer to reach us directly?</p>
+            <p className="font-semibold text-brand-900">Email: <a href={`mailto:${SITE.email}`} className="underline hover:no-underline">{SITE.email}</a></p>
           </div>
-          <div className="space-y-6">
-            <div className="bg-white rounded-xl border border-slate-200 p-6">
-              <h2 className="font-bold text-slate-900 text-lg mb-4">What Happens Next?</h2>
-              <ol className="space-y-4">
-                {[
-                  { n: '1', title: 'We receive your enquiry', desc: 'Your details are securely forwarded to a NZ-licensed insurance adviser.' },
-                  { n: '2', title: 'Adviser reviews your situation', desc: 'The adviser assesses your cover requirements — whether you rent, own, or are a landlord.' },
-                  { n: '3', title: 'You receive a call or email', desc: 'Within one business day, the adviser contacts you with options and a quote.' },
-                  { n: '4', title: 'Choose your cover', desc: `Compare options and proceed only if you're happy. No pressure, no obligation.` },
-                ].map(step => (
-                  <li key={step.n} className="flex gap-4">
-                    <span className="w-8 h-8 rounded-full bg-brand-700 text-white font-bold text-sm flex items-center justify-center flex-shrink-0">{step.n}</span>
-                    <div>
-                      <div className="font-semibold text-slate-900">{step.title}</div>
-                      <div className="text-slate-600 text-sm mt-0.5">{step.desc}</div>
-                    </div>
-                  </li>
-                ))}
-              </ol>
-            </div>
 
-            <div className="bg-brand-50 rounded-xl border border-brand-200 p-6">
-              <h3 className="font-bold text-brand-900 mb-3">Contact Directly</h3>
-              <p className="text-brand-800 text-sm mb-2">Prefer to reach us directly?</p>
-              <p className="font-semibold text-brand-900">Email: <a href={`mailto:${SITE.email}`} className="underline hover:no-underline">{SITE.email}</a></p>
-            </div>
-
-            <div className="bg-white rounded-xl border border-slate-200 p-6 text-sm text-slate-600">
-              <p className="font-semibold text-slate-900 mb-2">Financial Advice Disclosure</p>
-              <p>HomeContentsInsurance.co.nz is a referral service. We connect you with NZ-licensed financial advisers regulated under the Financial Markets Conduct Act 2013. Advisers earn commission from insurers; there is no cost to you for the referral.</p>
-            </div>
+          <div className="bg-white rounded-xl border border-slate-200 p-6 text-sm text-slate-600">
+            <p className="font-semibold text-slate-900 mb-2">Financial Advice Disclosure</p>
+            <p>HomeContentsInsurance.co.nz is a referral service. We connect you with NZ-licensed financial advisers regulated under the Financial Markets Conduct Act 2013. Advisers earn commission from insurers; there is no cost to you for the referral.</p>
           </div>
         </div>
       </div>
