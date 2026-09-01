@@ -61,8 +61,8 @@ export default function Footer() {
             <h4 className="font-bold text-white text-sm mb-4 uppercase tracking-wide">Industry Bodies</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://www.icnz.org.nz" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition">
-                  ICNZ — Insurance Council NZ ↗
+                <a href="https://www.companiesoffice.govt.nz/all-registers/financial-service-providers/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-400 transition">
+                  FSPR — Financial Service Providers Register ↗
                 </a>
               </li>
               <li>
