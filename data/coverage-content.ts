@@ -94,7 +94,7 @@ It's important to review your contents insurance regularly, especially after maj
     ],
     nzContext: `In New Zealand, homeowners benefit from the Earthquake Commission (EQC) scheme, which covers insurable land and buildings (including fixtures and fittings that are part of the building) up to $15,000 per claim, plus loss of rent. However, EQC doesn't cover your contents at all. After significant earthquakes in Christchurch (2011) and other regions, many homeowners found this gap devastating—while EQC covered building repairs, they had to cover contents losses themselves.
 
-The Insurance Council of New Zealand regulates both building and contents insurance to ensure fair dealing and proper disclosure. Homeowners should be aware that standard building insurance doesn't cover your personal possessions, which is why separate contents coverage is essential. The regulatory framework requires insurers to be clear about what's covered and what's excluded.
+The Financial Markets Authority regulates both building and contents insurance to ensure fair dealing and proper disclosure. Homeowners should be aware that standard building insurance doesn't cover your personal possessions, which is why separate contents coverage is essential. The regulatory framework requires insurers to be clear about what's covered and what's excluded.
 
 New Zealand's climate and geography create specific risks that contents insurance addresses. Coastal properties face salt spray and flooding risk, Auckland and northland face cyclone risk, and most of the country faces earthquake risk. Your contents insurer should understand these regional risks and offer appropriate cover.`,
     howToChoose: `Start by creating a detailed inventory of everything in your home and its replacement value. This is the most important step in choosing appropriate cover. Go room by room, including wardrobes, storage spaces, and outbuildings. Be realistic about values—check current retail prices for similar items rather than guessing. Many homeowners significantly underestimate their total contents value.
@@ -157,7 +157,7 @@ Choosing the right level of cover is important. You need to accurately declare t
 
 Landlords can't simply charge tenants for all damage through bond deductions. The Residential Tenancies Dispute Resolution Services has clear guidance on what constitutes normal wear and tear (landlord's responsibility) versus damage caused by tenant misuse (potentially tenant responsibility). Insurance helps fill the gap where bond money doesn't cover damage costs.
 
-The Insurance Council of New Zealand provides guidance on landlord insurance obligations and fair dealing. Landlords should ensure they're properly insured and have clear documentation of the condition of furnishings and fittings at the start of each tenancy. Regular inspections and photographs help establish liability if damage occurs.`,
+The Financial Markets Authority provides guidance on landlord insurance obligations and fair dealing. Landlords should ensure they're properly insured and have clear documentation of the condition of furnishings and fittings at the start of each tenancy. Regular inspections and photographs help establish liability if damage occurs.`,
     howToChoose: `Start by creating a detailed inventory of everything you've provided in the rental property. Walk through each room and list every item with its replacement value. Include obvious items like beds and sofas, but also easy-to-forget items like curtains, light fittings, kitchen utensils, bedding, and towels. Be realistic about replacement costs—check current retail prices for similar items.
 
 Decide what level of cover you need based on your rental strategy. If you rent to long-term tenants and provide basic furnishings, you might need less cover than someone who operates a holiday rental with high-value furniture and electronics. Consider the type of tenants you attract and the wear-and-tear patterns you've experienced with previous rentals.
@@ -214,7 +214,7 @@ Getting the valuation right is crucial when you take out specified item cover. F
       `Collectible items whose value depends on rarity or condition that you've damaged yourself`,
       'Items held in bank safe deposit boxes or vaults (usually not covered by home contents policies)'
     ],
-    nzContext: `In New Zealand, high-value items deserve special attention under the Insurance Council's fair dealing requirements. Insurers must make it clear that standard policies have sub-limits for valuables, and they can't simply refuse claims after the fact. If you own valuable items, the onus is on you to declare them and obtain specified cover, but insurers must be transparent about why this is necessary.
+    nzContext: `In New Zealand, high-value items deserve special attention under fair dealing requirements. Insurers must make it clear that standard policies have sub-limits for valuables, and they can't simply refuse claims after the fact. If you own valuable items, the onus is on you to declare them and obtain specified cover, but insurers must be transparent about why this is necessary.
 
 New Zealand's art market has grown significantly, and local artists' works can be quite valuable. If you're collecting contemporary New Zealand art or have original works by established artists, specified item cover is essential. The NZ Art Foundation can provide guidance on valuation services for New Zealand artworks.
 
@@ -281,7 +281,7 @@ It's important to understand what's included and what's excluded. Some policies 
 
 Travel is also a key reason for this cover. New Zealand is geographically remote, and many Kiwis travel internationally regularly. Having comprehensive portable valuables cover means your items are protected while travelling overseas, whether you're in Australia, Asia, or further afield. This is often more affordable than buying travel insurance that covers valuables separately in each destination.
 
-New Zealand's insurance market strongly encourages customers to declare their valuables and understand their coverage limits. The Insurance Council of New Zealand advocates for transparent disclosure so customers aren't surprised when claiming.`,
+New Zealand's insurance market strongly encourages customers to declare their valuables and understand their coverage limits. The Financial Markets Authority advocates for transparent disclosure so customers aren't surprised when claiming.`,
     howToChoose: `Start by identifying which items you regularly carry or take outside your home. Do you take a laptop to work or cafés? Do you travel with an expensive camera or drone? Do you wear valuable watches or jewellery? These are the items most at risk of being lost, stolen, or accidentally damaged while outside your home.
 
 Assess the replacement value of these items. A laptop might be worth $2,000, a good camera $3,000, a watch $5,000. These values quickly add up, making portable valuables cover worthwhile. Consider both the financial cost of replacement and the inconvenience—if your laptop is stolen while travelling, not only do you lose the device, you lose access to your work and data.
@@ -344,7 +344,7 @@ Understanding when accidental damage applies is important. If something is damag
 
 The Healthy Homes Act requires rental properties to meet strict insulation and ventilation standards, but these are only minimums. Many homes, especially older ones, still struggle with moisture and damp. While insurers don't cover damage from poor maintenance, accidental damage cover helps when accidents happen in these challenging environments.
 
-The Insurance Council of New Zealand encourages customers to understand the difference between accidental damage cover and other exclusions. Carelessness (not the same as accident) and negligence might still be excluded, but genuine accidents are covered. Clear communication from insurers about what constitutes an accident versus negligence is important.`,
+The Financial Markets Authority encourages customers to understand the difference between accidental damage cover and other exclusions. Carelessness (not the same as accident) and negligence might still be excluded, but genuine accidents are covered. Clear communication from insurers about what constitutes an accident versus negligence is important.`,
     howToChoose: `Consider your household composition and lifestyle when deciding on accidental damage cover. Families with young children, teenagers, or pets face higher accident rates and benefit significantly from this cover. If you live alone or with adults only, accidental damage is less critical but still valuable.
 
 Think about your furniture and appliances. Do you have expensive sofas, good quality electronics, or items of value that you'd struggle to replace if accidentally damaged? The cost of accidental damage cover is usually modest compared to the replacement cost of even one major item.
@@ -407,7 +407,7 @@ Documentation is particularly important with temporary accommodation. Make a det
 
 The Residential Tenancies Act has specific requirements when renting temporary accommodation in New Zealand. As a tenant, you're responsible for protecting your belongings, and your landlord's insurance doesn't cover your contents. Having portable contents coverage or temporary accommodation cover is essential when renting anywhere in New Zealand, even for short periods.
 
-The Insurance Council of New Zealand encourages customers to notify insurers of temporary moves and changes to their circumstances. Insurers must be informed promptly to ensure coverage is maintained. Failing to declare a temporary address or change of circumstances might result in your coverage being invalid if you need to claim.`,
+The Financial Markets Authority encourages customers to notify insurers of temporary moves and changes to their circumstances. Insurers must be informed promptly to ensure coverage is maintained. Failing to declare a temporary address or change of circumstances might result in your coverage being invalid if you need to claim.`,
     howToChoose: `The first step is to determine if you'll have a temporary address and how long you'll be there. If the stay is expected to be short (a few weeks), you might rely on basic personal liability coverage. But for stays of one month or longer, you should arrange formal temporary accommodation cover to protect your contents.
 
 When arranging temporary accommodation cover, provide your insurer with full details of where you'll be staying, what the property is like, and how long you'll be there. Be accurate—if you're extending your stay, notify your insurer. If you're moving to a different temporary address, let them know.

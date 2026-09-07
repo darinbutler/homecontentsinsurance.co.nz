@@ -10,7 +10,7 @@ Two files have been built and are ready for integration:
 - Complete SEO metadata with OpenGraph, Twitter Cards
 - Organization and WebSite JSON-LD schemas
 - Header/Footer structure
-- NZ-focused (en-NZ language, ICNZ reference)
+- NZ-focused (en-NZ language, FSP reference)
 
 ### 2. Homepage (`app/page.tsx` — 552 lines)
 - 10 complete sections with market research integration
@@ -109,7 +109,7 @@ vercel deploy
 
 **External:**
 - `https://homecontentsinsurance.co.nz` — Site domain
-- `https://www.icnz.org.nz` — ICNZ reference
+- `https://www.fma.govt.nz/ — FSP reference
 
 ## Documentation
 

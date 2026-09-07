@@ -74,7 +74,7 @@ export default function RootLayout({
               description:
                 'Home contents insurance broker referral service connecting NZ renters, homeowners, and landlords with expert FMCA-regulated advisers.',
               sameAs: [
-                'https://www.icnz.org.nz',
+                'https://www.fma.govt.nz/',
               ],
               address: {
                 '@type': 'PostalAddress',

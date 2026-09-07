@@ -9,7 +9,7 @@ Key features:
 - Metadata export with title template and full description
 - OpenGraph & Twitter Card configuration
 - Robots directive (index: true, googleBot max-snippet/-1)
-- Organization schema (ICNZ reference, NZ address, service type)
+- Organization schema (FSP reference, NZ address, service type)
 - WebSite schema with SearchAction
 - HTML lang="en-NZ" for New Zealand English
 - Header, main, Footer structure

@@ -60,7 +60,7 @@ export const metadata: Metadata = {
       url: 'https://homecontentsinsurance.co.nz',
       description:
         'Home contents insurance broker referral service connecting NZ renters, homeowners, and landlords with expert FMCA-regulated advisers.',
-      sameAs: ['https://www.icnz.org.nz'],
+      sameAs: ['https://www.fma.govt.nz/'],
       address: {
         '@type': 'PostalAddress',
         addressCountry: 'NZ',
